@@ -1,0 +1,523 @@
+<!doctype html>
+<html lang="es" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Bien rentado | Renta segura de tu inmueble en México</title>
+    <meta
+      name="description"
+      content="Te ayudo a rentar tu propiedad perfilando al mejor inquilino, con investigación legal, contrato blindado, póliza jurídica y acompañamiento integral."
+    />
+    <meta
+      property="og:title"
+      content="Bien rentado | Renta segura de tu inmueble"
+    />
+    <meta
+      property="og:description"
+      content="Arrendamiento seguro en México: investigación de inquilinos, contrato blindado, póliza jurídica y cobranza profesional."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+    <script>
+      // Aplica el tema antes de pintar para evitar destellos
+      (function () {
+        try {
+          var saved = localStorage.getItem("botv-theme");
+          var system = window.matchMedia("(prefers-color-scheme: dark)").matches
+            ? "dark"
+            : "light";
+          document.documentElement.setAttribute("data-theme", saved || system);
+        } catch (e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <a class="skip-link" href="#hero">Ir al contenido</a>
+
+    <!-- ============ HEADER ============ -->
+    <header class="nav" id="nav">
+      <div class="nav-inner">
+        <a class="nav-logo" href="#hero" aria-label="Bien rentado, inicio">
+          <span class="nav-logo-icon" aria-hidden="true"></span>
+          <span class="nav-logo-text">Bien rentado</span>
+        </a>
+
+        <nav class="nav-links" id="nav-links" aria-label="Navegación principal">
+          <a href="#servicios">Servicios</a>
+          <a href="#proceso">Proceso</a>
+          <a href="#planes">Planes</a>
+          <a href="#testimonios">Testimonios</a>
+          <a class="btn btn-primary btn-sm nav-cta" href="#contacto">Cotizar</a>
+        </nav>
+
+        <div class="nav-actions">
+          <button
+            class="icon-btn"
+            id="theme-toggle"
+            type="button"
+            aria-label="Cambiar entre modo claro y oscuro"
+          >
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true">
+              <circle cx="12" cy="12" r="4.2" />
+              <path
+                d="M12 2v2.4M12 19.6V22M2 12h2.4M19.6 12H22M4.9 4.9l1.7 1.7M17.4 17.4l1.7 1.7M19.1 4.9l-1.7 1.7M6.6 17.4l-1.7 1.7"
+              />
+            </svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M20 14.5A8.5 8.5 0 0 1 9.5 4a8.5 8.5 0 1 0 10.5 10.5z" />
+            </svg>
+          </button>
+
+          <button
+            class="icon-btn hamburger"
+            id="menu-toggle"
+            type="button"
+            aria-label="Abrir menú"
+            aria-expanded="false"
+            aria-controls="nav-links"
+          >
+            <span></span><span></span><span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- ============ HERO ============ -->
+      <section class="hero" id="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow">Arrendamiento seguro en México</p>
+            <h1>Bien rentado<span class="dots">...</span></h1>
+            <p class="lead">
+              Te ayudo a rentar tu propiedad perfilando al mejor inquilino, con
+              respaldo jurídico integral.
+            </p>
+
+            <ul class="pills" aria-label="Categorías de inmuebles">
+              <li>Casas</li>
+              <li>Cuartos</li>
+              <li>Locales comerciales</li>
+              <li>Bodegas</li>
+              <li>Departamentos</li>
+            </ul>
+
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#contacto"
+                >Monetiza tu inmueble →</a
+              >
+              <a class="btn btn-ghost" href="#proceso">Cómo funciona</a>
+            </div>
+
+            <dl class="hero-stats">
+              <div>
+                <dt>360°</dt>
+                <dd>Verificación del inquilino</dd>
+              </div>
+              <div>
+                <dt>12</dt>
+                <dd>Meses de renta garantizada</dd>
+              </div>
+              <div>
+                <dt>1 a 1</dt>
+                <dd>Acompañamiento del día 1 al cierre</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-gallery reveal">
+            <figure class="hero-shot hero-shot-main">
+              <img
+                src="./img/casa.jpg"
+                alt="Casa residencial moderna lista para rentar"
+                width="1024"
+                height="768"
+              />
+              <figcaption>Casas</figcaption>
+            </figure>
+            <figure class="hero-shot">
+              <img
+                src="./img/departamento.jpg"
+                alt="Edificio de departamentos en renta"
+                width="1024"
+                height="768"
+                loading="lazy"
+              />
+              <figcaption>Departamentos</figcaption>
+            </figure>
+            <figure class="hero-shot">
+              <img
+                src="./img/local.jpg"
+                alt="Local comercial con amplios ventanales"
+                width="1024"
+                height="768"
+                loading="lazy"
+              />
+              <figcaption>Locales</figcaption>
+            </figure>
+            <figure class="hero-shot">
+              <img
+                src="./img/bodega.jpg"
+                alt="Interior de bodega limpia e iluminada"
+                width="1024"
+                height="768"
+                loading="lazy"
+              />
+              <figcaption>Bodegas</figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PILARES ============ -->
+      <section class="section section-alt" id="pilares">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Tranquilidad</p>
+            <h2>Cinco pilares para rentar con tranquilidad total</h2>
+          </header>
+
+          <div class="grid grid-pillars">
+            <article class="card reveal">
+              <span class="card-icon" aria-hidden="true">🛡</span>
+              <h3>Seguridad</h3>
+              <p>Protección integral de tu patrimonio.</p>
+            </article>
+            <article class="card reveal">
+              <span class="card-icon" aria-hidden="true">🔎</span>
+              <h3>Investigación legal</h3>
+              <p>Verificación de Buró, identidad e ingresos.</p>
+            </article>
+            <article class="card reveal">
+              <span class="card-icon" aria-hidden="true">⚖️</span>
+              <h3>Asesoramiento jurídico</h3>
+              <p>Equipo legal especializado en derecho inmobiliario.</p>
+            </article>
+            <article class="card reveal">
+              <span class="card-icon" aria-hidden="true">📜</span>
+              <h3>Leyes y regulaciones</h3>
+              <p>Contratos blindados vigentes en México.</p>
+            </article>
+            <article class="card reveal">
+              <span class="card-icon" aria-hidden="true">🤝</span>
+              <h3>Acompañamiento</h3>
+              <p>Presencia continua del día 1 al cierre.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ SERVICIOS ============ -->
+      <section class="section" id="servicios">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Cobertura 360°</p>
+            <h2>Todo lo que necesitas, en un solo lugar</h2>
+          </header>
+
+          <div class="grid grid-3">
+            <article class="card card-service reveal">
+              <span class="num">01</span>
+              <h3>Investigación de Inquilinos</h3>
+              <p>Buró, ingresos, listas negras.</p>
+            </article>
+            <article class="card card-service reveal">
+              <span class="num">02</span>
+              <h3>Asesoría Comercial</h3>
+              <p>Valuación y fijación de renta.</p>
+            </article>
+            <article class="card card-service reveal">
+              <span class="num">03</span>
+              <h3>Contrato Blindado + Pagarés</h3>
+              <p>Documentación lista para proteger tu inmueble y tus pagos.</p>
+            </article>
+            <article class="card card-service reveal">
+              <span class="num">04</span>
+              <h3>Póliza Jurídica</h3>
+              <p>Garantía de pago hasta 12 meses.</p>
+            </article>
+            <article class="card card-service reveal">
+              <span class="num">05</span>
+              <h3>Cobranza Profesional</h3>
+              <p>Preventiva, administrativa y judicial.</p>
+            </article>
+            <article class="card card-service reveal">
+              <span class="num">06</span>
+              <h3>Recuperación del Inmueble</h3>
+              <p>Demanda y juicio de desocupación.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PROCESO ============ -->
+      <section class="section section-alt" id="proceso">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Proceso</p>
+            <h2>Cuatro pasos hacia la renta perfecta</h2>
+          </header>
+
+          <ul class="steps">
+            <li class="step reveal">
+              <span class="step-num">I</span>
+              <h3>Contáctanos</h3>
+              <p>Asesoría gratuita.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num">II</span>
+              <h3>Investigamos</h3>
+              <p>Verificación 360°.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num">III</span>
+              <h3>Blindamos</h3>
+              <p>Contrato, pagarés y póliza.</p>
+            </li>
+            <li class="step reveal">
+              <span class="step-num">IV</span>
+              <h3>Te Protegemos</h3>
+              <p>Cobro y seguimiento.</p>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ============ PROPIEDADES ============ -->
+      <section class="section" id="propiedades">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Inmuebles</p>
+            <h2>Cualquier inmueble que quieras monetizar</h2>
+          </header>
+
+          <div class="grid grid-pillars">
+            <article class="card card-type reveal">
+              <span class="card-icon" aria-hidden="true">🏠</span>
+              <h3>Casas</h3>
+            </article>
+            <article class="card card-type reveal">
+              <span class="card-icon" aria-hidden="true">🛋</span>
+              <h3>Cuartos</h3>
+            </article>
+            <article class="card card-type reveal">
+              <span class="card-icon" aria-hidden="true">🏪</span>
+              <h3>Locales</h3>
+            </article>
+            <article class="card card-type reveal">
+              <span class="card-icon" aria-hidden="true">📦</span>
+              <h3>Bodegas</h3>
+            </article>
+            <article class="card card-type reveal">
+              <span class="card-icon" aria-hidden="true">🏢</span>
+              <h3>Departamentos</h3>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ PLANES ============ -->
+      <section class="section section-alt" id="planes">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Planes</p>
+            <h2>Elige tu nivel de tranquilidad</h2>
+          </header>
+
+          <div class="grid grid-3 plans">
+            <article class="card plan reveal">
+              <h3>Básico</h3>
+              <p class="price">1 Renta</p>
+              <p class="price-note">Pago único por colocación</p>
+              <ul class="check">
+                <li>Comercialización</li>
+                <li>Investigación</li>
+                <li>Contrato</li>
+                <li>Inventario</li>
+              </ul>
+              <a class="btn btn-ghost btn-block" href="#contacto"
+                >Quiero el Básico</a
+              >
+            </article>
+
+            <article class="card plan plan-featured reveal">
+              <span class="badge">Recomendado</span>
+              <h3>Protección Total</h3>
+              <p class="price">1 Renta + Póliza</p>
+              <p class="price-note">La opción más elegida por propietarios</p>
+              <ul class="check">
+                <li>Póliza anual</li>
+                <li>Garantía de pago 12 meses</li>
+                <li>Cobranza incluida</li>
+                <li>Demanda sin costo</li>
+              </ul>
+              <a class="btn btn-warm btn-block" href="#contacto"
+                >Quiero Protección Total</a
+              >
+            </article>
+
+            <article class="card plan reveal">
+              <h3>Premium</h3>
+              <p class="price">$2,500+ <span>/ mensual</span></p>
+              <p class="price-note">Membresía VIP</p>
+              <ul class="check">
+                <li>Membresía VIP</li>
+                <li>Pago garantizado mensual</li>
+                <li>Asesor 24/7</li>
+              </ul>
+              <a class="btn btn-ghost btn-block" href="#contacto"
+                >Quiero Premium</a
+              >
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ TESTIMONIOS ============ -->
+      <section class="section" id="testimonios">
+        <div class="container">
+          <header class="section-head reveal">
+            <p class="eyebrow">Testimonios</p>
+            <h2>Propietarios que descansan tranquilos</h2>
+          </header>
+
+          <div class="grid grid-3">
+            <figure class="card quote reveal">
+              <blockquote>
+                “Renté mi casa en tres semanas y con un inquilino verificado.
+                Por primera vez cobro sin preocuparme.”
+              </blockquote>
+              <figcaption>
+                <span class="avatar" aria-hidden="true">MR</span>
+                <span
+                  ><strong>Martha Rodríguez</strong><small>CDMX</small></span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="card quote reveal">
+              <blockquote>
+                “El contrato blindado y los pagarés me dieron la seguridad que
+                ningún otro asesor me ofreció.”
+              </blockquote>
+              <figcaption>
+                <span class="avatar" aria-hidden="true">JL</span>
+                <span
+                  ><strong>Jorge López</strong><small>Monterrey</small></span
+                >
+              </figcaption>
+            </figure>
+
+            <figure class="card quote reveal">
+              <blockquote>
+                “Tuve un retraso de pago y la cobranza se resolvió sin que yo
+                tuviera que intervenir.”
+              </blockquote>
+              <figcaption>
+                <span class="avatar" aria-hidden="true">AC</span>
+                <span
+                  ><strong>Ana Castillo</strong><small>Guadalajara</small></span
+                >
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CTA FINAL ============ -->
+      <section class="cta" id="contacto">
+        <div class="container cta-inner reveal">
+          <h2>Monetiza tu inmueble</h2>
+          <p>
+            Asesoría gratuita, sin compromiso. Te decimos cuánto puede rentar tu
+            propiedad hoy.
+          </p>
+          <a
+            class="btn btn-warm btn-lg"
+            href="https://wa.me/525512345678?text=Hola%2C%20quiero%20asesor%C3%ADa%20para%20rentar%20mi%20inmueble"
+            target="_blank"
+            rel="noopener"
+            >Asesoría gratuita por WhatsApp →</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <a class="nav-logo" href="#hero">
+            <span class="nav-logo-icon" aria-hidden="true"></span>
+            <span class="nav-logo-text">Bien rentado</span>
+          </a>
+          <p class="footer-desc">
+            Arrendamiento seguro en México. Perfilamos al mejor inquilino y
+            blindamos tu patrimonio con respaldo jurídico integral.
+          </p>
+        </div>
+
+        <div>
+          <h3>Servicios</h3>
+          <ul>
+            <li><a href="#servicios">Investigación de inquilinos</a></li>
+            <li><a href="#servicios">Contrato blindado</a></li>
+            <li><a href="#servicios">Póliza jurídica</a></li>
+            <li><a href="#servicios">Cobranza profesional</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Empresa</h3>
+          <ul>
+            <li><a href="#pilares">Por qué elegirnos</a></li>
+            <li><a href="#proceso">Proceso</a></li>
+            <li><a href="#planes">Planes</a></li>
+            <li><a href="#testimonios">Testimonios</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Contacto</h3>
+          <ul>
+            <li><a href="tel:+525512345678">+52 55 1234 5678</a></li>
+            <li>
+              <a href="mailto:info@bienrentado.com">info@bienrentado.com</a>
+            </li>
+            <li><a href="#contacto">Cotizar ahora</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>
+          © <span id="year">2026</span> Bien rentado. Todos los derechos
+          reservados.
+        </p>
+      </div>
+    </footer>
+
+    <a
+      class="wa-float"
+      id="wa-float"
+      href="https://wa.me/525512345678?text=Hola%2C%20quiero%20asesor%C3%ADa%20para%20rentar%20mi%20inmueble"
+      target="_blank"
+      rel="noopener"
+      aria-label="Contactar por WhatsApp"
+    >
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <path
+          d="M12.04 2C6.6 2 2.2 6.4 2.2 11.84c0 1.9.53 3.66 1.45 5.17L2 22l5.13-1.6a9.9 9.9 0 0 0 4.9 1.28c5.44 0 9.85-4.4 9.85-9.84C21.88 6.4 17.48 2 12.04 2zm5.7 13.9c-.24.68-1.4 1.3-1.94 1.36-.54.06-1.05.08-1.65-.1-.35-.1-.8-.25-1.38-.5-2.43-1.05-4.02-3.5-4.14-3.66-.12-.16-.99-1.32-.99-2.52 0-1.2.63-1.79.85-2.03.22-.24.48-.3.64-.3.16 0 .32 0 .46.01.15.01.35-.06.54.41.2.48.67 1.64.73 1.76.06.12.1.26.02.42-.08.16-.15.26-.3.42-.14.16-.3.36-.43.48-.14.14-.29.29-.13.57.16.28.72 1.18 1.55 1.91 1.06.94 1.95 1.23 2.23 1.37.28.14.44.12.6-.07.16-.2.7-.81.88-1.09.19-.28.37-.23.63-.14.26.1 1.63.77 1.91.91.28.14.47.21.54.33.07.12.07.68-.17 1.36z"
+        />
+      </svg>
+    </a>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
