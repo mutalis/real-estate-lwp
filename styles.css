@@ -49,7 +49,12 @@ html {
 }
 
 body {
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
   background: var(--bg-primary);
   color: var(--text-primary);
   line-height: 1.65;
@@ -205,7 +210,7 @@ ul {
   min-width: 0;
 }
 .nav-logo-icon {
-  height: 1.8rem;
+  height: 1.05rem;
   width: auto;
   flex-shrink: 0;
   display: block;
@@ -272,7 +277,9 @@ ul {
   height: 2px;
   border-radius: 2px;
   background: currentColor;
-  transition: transform 0.25s ease, opacity 0.2s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.2s ease;
 }
 .hamburger.active span:nth-child(1) {
   transform: translateY(6px) rotate(45deg);
@@ -659,7 +666,11 @@ ul {
 /* ---------- CTA ---------- */
 .cta {
   padding: 64px 0;
-  background: linear-gradient(135deg, var(--primary-accent), var(--primary-accent-hover));
+  background: linear-gradient(
+    135deg,
+    var(--primary-accent),
+    var(--primary-accent-hover)
+  );
 }
 .cta-inner {
   text-align: center;
@@ -821,7 +832,7 @@ ul {
     font-size: 1.12rem;
   }
   .nav-logo-icon {
-    height: 2rem;
+    height: 1.15rem;
   }
   .hero-grid {
     grid-template-columns: 1.05fr 1fr;
