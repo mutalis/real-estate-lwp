@@ -214,6 +214,8 @@ ul {
   width: auto;
   flex-shrink: 0;
   display: block;
+  transform: scale(2.3);
+  transform-origin: center;
 }
 .nav-logo-text {
   font-family: "Poppins", sans-serif;
@@ -222,6 +224,7 @@ ul {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  padding-left: 10px;
 }
 .nav-actions {
   display: flex;
