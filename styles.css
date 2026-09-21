@@ -214,17 +214,18 @@ ul {
   width: auto;
   flex-shrink: 0;
   display: block;
-  transform: scale(2.3);
+  transform: scale(2.7);
   transform-origin: center;
+  padding-left: 1px;
 }
 .nav-logo-text {
   font-family: "Poppins", sans-serif;
   font-weight: 700;
-  font-size: 1.02rem;
+  font-size: 1.6rem;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  padding-left: 10px;
+  padding-left: 12px;
 }
 .nav-actions {
   display: flex;
@@ -784,6 +785,13 @@ ul {
   .section {
     padding: 84px 0;
   }
+  .nav-logo-text {
+    font-size: 2.2rem;
+    padding-left: 20px;
+  }
+  .nav-logo-icon {
+    height: 1.15rem;
+  }
   .hero {
     padding: 140px 0 80px;
   }
@@ -832,7 +840,8 @@ ul {
     margin: 0 0 0 10px;
   }
   .nav-logo-text {
-    font-size: 1.12rem;
+    font-size: 2.2rem;
+    padding-left: 20px;
   }
   .nav-logo-icon {
     height: 1.15rem;
